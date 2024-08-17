@@ -96,7 +96,7 @@ h6 {
 #header h2 span {
   color: #fff;
   border-bottom: 2px solid #ff8600;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 #header img {
@@ -420,7 +420,7 @@ section .container {
 }
 
 .about-me .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 }
@@ -762,7 +762,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #e67e00;
 }
 
 .services .icon-box:hover h4 a,
