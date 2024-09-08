@@ -10,7 +10,7 @@ const urls = [
   let index = 0;
   for (const url of urls) {
     await page.goto(url);
-    await page.screenshot({ path: 'screenshots/default.png' });
+    await page.screenshot({ path: 'screenshots/' + index + '_default.png' });
 
     const devices = [
       { name: 'iPhone SE', fileName: index + '_iphone-se.png' },
