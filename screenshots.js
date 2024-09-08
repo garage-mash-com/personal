@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const url = 'https://example.com/';
+const url = 'https://garage-mash.com/';
 
 (async () => {
   const browser = await puppeteer.launch({ headless: 'new' });
