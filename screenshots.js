@@ -6,7 +6,7 @@ const url = 'https://example.com/';
   const page = await browser.newPage();
 
   await page.goto(url);
-  await page.screenshot({ path: 'images/default.png' });
+  await page.screenshot({ path: 'screenshots/default.png' });
 
   const devices = [
     { name: 'iPhone SE', fileName: 'iphone-se.png' },
@@ -18,7 +18,7 @@ const url = 'https://example.com/';
     await page.emulate(dev);
     await page.goto(url);
     await page.screenshot(
-      { path: 'images/' + device.fileName, fullPage: true }
+      { path: 'screenshots/' + device.fileName, fullPage: true }
     );
   }
 
