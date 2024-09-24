@@ -7,3 +7,5 @@
 | 2 | https://garage-mash.com/#services |
 | 3 | https://garage-mash.com/#portfolio |
 | 4 | https://garage-mash.com/#contact |
+| 5 | https://garage-mash.com/notfound |
+| 6 | https://garage-mash.com/notfound/ |
