@@ -1,6 +1,10 @@
 const puppeteer = require('puppeteer');
 const urls = [
   'https://garage-mash.com/',
+  'https://garage-mash.com/#about',
+  'https://garage-mash.com/#services',
+  'https://garage-mash.com/#portfolio',
+  'https://garage-mash.com/#contact',
 ];
 
 (async () => {
