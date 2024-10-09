@@ -5,6 +5,8 @@ const urls = [
   'https://garage-mash.com/#services',
   'https://garage-mash.com/#portfolio',
   'https://garage-mash.com/#contact',
+  'https://garage-mash.com/notfound',
+  'https://garage-mash.com/notfound/',
 ];
 
 (async () => {
