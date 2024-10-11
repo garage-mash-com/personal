@@ -32,7 +32,7 @@ const urls = [
       );
     }
 
-    index = index + 1
+    index = index + 1;
   }
 
   await browser.close();
