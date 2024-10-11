@@ -9,6 +9,8 @@ const urls = [
   'https://garage-mash.com/notfound/',
 ];
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 (async () => {
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
@@ -16,6 +18,7 @@ const urls = [
   let index = 0;
   for (const url of urls) {
     await page.goto(url);
+    await sleep(2000);
     await page.screenshot({ path: 'screenshots/' + index + '_default.png' });
 
     const devices = [
@@ -27,6 +30,7 @@ const urls = [
       const dev = puppeteer.KnownDevices[device.name];
       await page.emulate(dev);
       await page.goto(url);
+      await sleep(2000);
       await page.screenshot(
         { path: 'screenshots/' + device.fileName, fullPage: true }
       );
